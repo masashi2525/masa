@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+}
+
+a {
+  color: #0c419a;
+}
+
+ul {
+  padding: 0;
+}
+
+/* ヘッダー */
+#pageHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 60px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.siteLogo {
+  padding-left: 36px;
+}
+
+.glovalNavi {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.glovalNavi ul li {
+  list-style: none;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  height: 60px;
+}
+
+.navMenu li {
+  margin-right: 15px;
+}
+
+.navMenu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navItem li {
+  width: 58px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navItem img {
+  width: 20px;
+  height: 20px;
+}
+
+.navItem li:hover {
+  opacity: 0.5;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.hamburger div {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 20px;
+  background-color: #444;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.hamburger div:nth-of-type(1) {
+  top: 2px;
+}
+
+.hamburger div:nth-of-type(2) {
+  top: 10px;
+}
+
+.hamburger div:nth-of-type(3) {
+  bottom: 0;
+}
+
+/* パンくずリスト */
+.topicPath {
+  max-width: 1270px;
+  width: 94%;
+  margin: 0 auto 25px auto;
+}
+
+.topicPath p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #999;
+  width: 1000px;
+  margin: 0;
+}
+
+.topicPath a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* メイン画像 */
+.mainVisual {
+  position: relative;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.mainVisual img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.mainVisualText {
+  width: 1000px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+}
+
+.mainVisualText h1 {
+  font-size: 28px;
+  margin: 16px 0 10px;
+}
+
+.mainVisual p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* SNSリンク（右寄せ） */
+.snsLink {
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 40px;
+}
+
+.snsLink p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.snsLink ul {
+  display: flex;
+  margin: 0;
+}
+
+.snsLink ul li {
+  list-style: none;
+}
+
+.snsLink ul li a {
+  margin-left: 20px;
+}
+
+.snsLink ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* メインコンテンツ */
+.mainContent {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contentTextImage {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.mainContent h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.mainContent p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.contentStoryImage {
+  width: 800px;
+  height: auto;
+}
+
+/* PDFリンク */
+.document {
+  text-align: center;
+  margin: 20px 0 60px;
+}
+
+.document a {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #005bac;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.document a:hover {
+  opacity: 0.8;
+}
+
+.document a:before {
+  content: ">";
+  font-size: 10px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.document a img {
+  margin-left: 11px;
+  width: 16px;
+  height: 16px;
+}
+
+/* ページリンク */
+.contentLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentLink p {
+  margin: 0;
+}
+
+.contentLink a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contentLink a:hover {
+  text-decoration: underline;
+}
+
+.linkLeft:before {
+  content: "<";
+  padding-right: 6px;
+}
+
+.linkRight:after {
+  content: ">";
+  padding-left: 6px;
+}
+
+/* NRIの強み */
+.contentNav {
+  margin: 40px 0 60px;
+  padding: 20px;
+  background-color: #deecf8;
+}
+
+.contentNavItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentNav p {
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.contentNavItem a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  position: relative;
+  transition: background-color 0.5s;
+}
+
+.contentNavItem a:before {
+  content: ">";
+  position: absolute;
+  font-size: 10px;
+  color: #231815;
+  left: 10px;
+}
+
+.contentNavItem a:hover {
+  background-color: #f5f5f5;
+}
+
+/* 企業情報 */
+.companyInfo {
+  width: 1000px;
+  margin: 120px auto 80px;
+}
+
+.companyInfo h2 {
+  font-size: 20px;
+  line-height: 1.88;
+  margin: 0;
+  padding: 18px 0 30px;
+  border-top: solid 2px #000;
+  border-bottom: dotted 1px #ccc;
+}
+
+.companyInfoList {
+  padding: 30px 0;
+  border-bottom: dotted 1px #ccc;
+}
+
+.companyInfoList p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.88;
+  font-weight: bold;
+}
+
+.companyInfoList ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.companyInfoList a {
+  display: inline-block;
+  width: 230px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 20px;
+  padding-left: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.companyInfoList a:before {
+  content: ">";
+  font-size: 8px;
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+.companyInfoList a:hover {
+  text-decoration: underline;
+}
+
+.prev {
+  margin-top: 80px;
+}
+
+.prev a {
+  font-size: 16px;
+  padding-left: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.prev a:before {
+  content: "<";
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 0;
+  color: #333;
+}
+
+/* SNSリンク（中央） */
+.footerSnsLink {
+  text-align: center;
+  padding: 30px 0;
+  border-top: solid 2px #999;
+  border-bottom: solid 2px #999;
+}
+
+.footerSnsLink ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSnsLink ul li {
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.footerSnsLink ul li a {
+  margin-left: 40px;
+  }
+
+.footerSnsLink ul li a img {
+  width: 28px;
+  height: 28px;
+}
+
+/* フッターナビ */
+.footerNavi {
+  max-width: 1286px;
+  margin: 40px auto 0;
+}
+
+.footerNaviLink {
+  margin: 0 10px;
+  display: flex;
+}
+
+.footerNavi ul {
+  width: 25%;
+  margin: 0 0 60px;
+}
+
+.footerNavi li{
+  list-style: none;
+  font-size: 14px;
+  padding: 12px 0;
+}
+
+.footerNaviBold {
+  margin-bottom: 8px;
+}
+
+.footerNaviBold a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footerNavi a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.footerNavi a:hover {
+  text-decoration: underline;
+}
+
+.footerNavi a:before {
+  content: "";
+  background: url(/common/images/icon-chevronRight.svg) no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+}
+
+/* フッター */
+.pageFoot {
+  border-top: 1px solid #ccc;
+  padding: 50px 0 112px;
+}
+
+.pageFootLink {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.pageFoot ul {
+  display: flex;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.pageFoot ul li {
+  list-style: none;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.pageFoot ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+  padding-right: 18px;
+  margin-right: 18px;
+  border-right: solid 1px;
+}
+
+.pageFoot ul li:last-child a {
+  border-right: none;
+}
+
+.pageFoot ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 1.88;
+}
