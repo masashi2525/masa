@@ -182,7 +182,7 @@ ul {
   margin: 0 auto 40px;
 }
 
-.snsLink p {
+.snsLink h2 {
   font-size: 12px;
   color: #666;
   margin: 0;
@@ -444,9 +444,12 @@ ul {
 }
 
 .footerSnsLink ul li {
-  font-size: 20px;
-  font-weight: bold;
   list-style: none;
+}
+
+.footerSnsLink ul li h2 {
+  font-size: 20px;
+  margin: 0;
 }
 
 .footerSnsLink ul li a {
